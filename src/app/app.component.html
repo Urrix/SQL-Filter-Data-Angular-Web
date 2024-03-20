@@ -1,0 +1,30 @@
+<button mat-button [matMenuTriggerFor]="aboveMenu">Palabras</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Top 10</button>
+  <button mat-menu-item>Less 10</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Busquedas Dislexicas</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>mas resultados</button>
+  <button mat-menu-item>menos resultados</button>
+  <button mat-menu-item>sin resultados</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">Fecha Y Hora</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item>horas con mas busquedas</button>
+  <button mat-menu-item>menos</button>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="afterMenu">General/Filtros</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+  <button mat-menu-item>Filtros</button>
+  <button mat-menu-item>todo</button>
+</mat-menu>
+<div>
+  <h1>Uso de Base De datos, SQL y su explotacion para un mejor uso
+  </h1>
+</div>
+<router-outlet />
