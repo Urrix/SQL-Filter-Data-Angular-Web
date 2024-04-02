@@ -14,8 +14,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 
 interface State {
-  name: string;
   abbreviation: string;
+  name: string;
   population: number;
   area: number;
 }
