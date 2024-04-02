@@ -9,13 +9,12 @@ import {MatDividerModule} from '@angular/material/divider';
 @Component({
   selector: 'app-palabras',
   standalone: true,
-  imports: [RouterOutlet,MatSidenavModule, MatButtonModule,MatCardModule,MatDividerModule, MatButtonModule, MatProgressBarModule],
+  imports: [RouterOutlet,MatSidenavModule,MatCardModule,MatDividerModule, MatButtonModule, MatProgressBarModule],
   templateUrl: './palabras.component.html',
   styleUrl: './palabras.component.css'
 })
 export class AppComponent {
   @ViewChild('drawer') drawer!: ElementRef<HTMLElement>;
-  title = 'ScrumRestaurante';
   longText = `..............................................................................
   .......................`;
   showFiller: boolean = false;
