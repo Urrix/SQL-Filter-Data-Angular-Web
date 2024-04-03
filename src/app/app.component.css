@@ -1,3 +1,134 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+  /*
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map.
+ */
+#map {
+  height: 100%;
+}
+
+/*
+ * Optional: Makes the sample page fill the window.
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.example-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  height: 100vh; /* Make the container take up the full view height */
+  position: relative;
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.example-card {
+  max-width: 400px;
+  margin-bottom: 8px;
+}
+.demo-table {
+  width: 100%;
+}
+
+.mat-column-demo-position {
+  width: 32px;
+  border-right: 1px solid currentColor;
+  padding-right: 24px;
+  text-align: center;
+}
+
+.mat-column-demo-name {
+  padding-left: 16px;
+  font-size: 20px;
+}
+
+.mat-column-demo-weight {
+  font-style: italic;
+}
+
+.mat-column-demo-symbol {
+  width: 32px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.my-component-content {
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+}
+
+.my-component-half {
+  width: 50%;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.my-component-divider {
+  width: 1px;
+  background-color: #ccc;
+  margin-left: 16px;
+}
+/* Structure */
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+nav {
+  background-color: #d3e0f0;  /* Light blue for background */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;  /* Centra la imagen verticalmente */
+}
+
+nav img.logo {
+  margin-right: 10px;  /* Ajusta el margen derecho para separar la imagen del texto */
+  height: 40px;  /* Ajusta la altura de la imagen */
+}
+
+nav button {
+  background-color: #87ceeb;  /* Lighter blue for buttons */
+  color: #fff;  /* White text for buttons */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #4b9de7;  /* Darker blue for button hover */
+}
+
+nav mat-menu-item {
+  padding: 10px;
+  color: #333;  /* Dark color for menu item text */
+}
+
+nav mat-menu-item a {
+  color: #333;  /* Dark color for menu item links */
+  text-decoration: none;
+}
