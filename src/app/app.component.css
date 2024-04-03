@@ -1,16 +1,16 @@
 .example-spacer {
     flex: 1 1 auto;
   }
-  /* 
+  /*
  * Always set the map height explicitly to define the size of the div element
- * that contains the map. 
+ * that contains the map.
  */
 #map {
   height: 100%;
 }
 
-/* 
- * Optional: Makes the sample page fill the window. 
+/*
+ * Optional: Makes the sample page fill the window.
  */
 html,
 body {
@@ -34,11 +34,11 @@ body {
 }
 
 .example-sidenav {
-  width: 250px; 
-  height: 100%; 
+  width: 250px;
+  height: 100%;
   position: fixed;
-  top: 0; 
-  left: 0; 
+  top: 0;
+  left: 0;
 }
 
 .example-card {
@@ -96,4 +96,39 @@ table {
 .mat-mdc-form-field {
   font-size: 14px;
   width: 100%;
+}
+nav {
+  background-color: #d3e0f0;  /* Light blue for background */
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;  /* Centra la imagen verticalmente */
+}
+
+nav img.logo {
+  margin-right: 10px;  /* Ajusta el margen derecho para separar la imagen del texto */
+  height: 40px;  /* Ajusta la altura de la imagen */
+}
+
+nav button {
+  background-color: #87ceeb;  /* Lighter blue for buttons */
+  color: #fff;  /* White text for buttons */
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: #4b9de7;  /* Darker blue for button hover */
+}
+
+nav mat-menu-item {
+  padding: 10px;
+  color: #333;  /* Dark color for menu item text */
+}
+
+nav mat-menu-item a {
+  color: #333;  /* Dark color for menu item links */
+  text-decoration: none;
 }
